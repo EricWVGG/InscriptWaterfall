@@ -6,7 +6,7 @@ var saveFileType = 0
 var sizeType = 3
 var previewScaler = 1
 
-var starterText = 'INSCRIPT\nTYPE+TECH\nFESTIVAL'
+var starterText = "INSCRIPT\nTYPE+TECH\nFESTIVAL"
 
 var inputText = []
 
@@ -79,22 +79,24 @@ function preload() {
   // tFont[2] = loadFont("resources/Evans-Narrow-Bold-Italic.otf");
   // tFont[3] = loadFont("resources/Heading-Now-45-Medium.otf");
   // tFont[4] = loadFont("resources/NeueWorld-CondensedRegular.ttf");
-  tFont[0] = loadFont('resources/Spectral-ExtraBold Italic-Desktop.otf')
-  tFont[1] = loadFont('resources/PPEditorialNew-UltraboldItalic.otf')
-  tFont[2] = loadFont('resources/NewSpirit-BoldCondensed.otf')
-  tFont[3] = loadFont('resources/FETTEFRA.TTF')
-  tFont[4] = loadFont('resources/Times New Roman Bold Italic.ttf')
-  tFont[5] = loadFont('resources/Comic Sans MS Bold.ttf')
+  tFont[0] = loadFont("resources/Spectral-ExtraBold Italic-Desktop.otf")
+  tFont[1] = loadFont("resources/PPEditorialNew-UltraboldItalic.otf")
+  tFont[2] = loadFont("resources/NewSpirit-BoldCondensed.otf")
+  tFont[3] = loadFont("resources/FETTEFRA.TTF")
+  tFont[4] = loadFont("resources/FETTEFRA.TTF")
+  // tFont[4] = loadFont('resources/Times New Roman Bold Italic.ttf')
+  tFont[5] = loadFont("resources/Comic Sans MS Bold.ttf")
 
-  tFont[6] = loadFont('resources/ManukaCondensed-Bold.otf')
-  tFont[7] = loadFont('resources/ManukaCondensed-Black.otf')
-  tFont[8] = loadFont('resources/ManukaCondensed-Ultra.otf')
-  tFont[9] = loadFont('resources/SohneSchmal-Dreiviertelfett.otf')
-  tFont[10] = loadFont('resources/Superheat-ExtraBold.otf')
-  tFont[11] = loadFont('resources/Superheat-Black.otf')
-  tFont[12] = loadFont('resources/Triade-Upright.otf')
-  tFont[13] = loadFont('resources/Triade-Slanted.otf')
-  tFont[14] = loadFont('resources/Triade-Backslant.otf')
+  tFont[6] = loadFont("resources/ManukaCondensed-Bold.otf")
+  tFont[7] = loadFont("resources/ManukaCondensed-Black.otf")
+  tFont[8] = loadFont("resources/ManukaCondensed-Ultra.otf")
+  tFont[9] = loadFont("resources/SohneSchmal-Dreiviertelfett.otf")
+  tFont[10] = loadFont("resources/Superheat-ExtraBold.otf")
+  tFont[11] = loadFont("resources/Superheat-Black.otf")
+  tFont[12] = loadFont("resources/Triade-Upright.otf")
+  tFont[13] = loadFont("resources/Triade-Upright.otf")
+  // tFont[13] = loadFont('resources/Triade-Slanted.otf')
+  tFont[14] = loadFont("resources/Triade-Backslant.otf")
 
   // tFontFactor[0] = 0.75;
   // tFontFactor[1] = 0.75;
@@ -118,28 +120,27 @@ function preload() {
   tFontFactor[13] = 0.73
   tFontFactor[14] = 0.73
 
-  defaultImage = loadImage('resources/glencoe.jpg')
+  defaultImage = loadImage("resources/glencoe.jpg")
   sizedImage = defaultImage
   userImage = null
 }
 
 function setup() {
-  canvasContainer = document.getElementById('canvas-container')
+  canvasContainer = document.getElementById("canvas-container")
 
   mainCanvas = createCanvas(windowWidth, windowHeight)
 
   mainCanvas.parent(canvasContainer)
 
-  document.getElementById('textArea').value = starterText
+  document.getElementById("textArea").value = starterText
 
-  bkgdColor = color('#000000')
-  foreColor = color('#ffffff')
-  colorSet[0] = color('#ffffff')
-  colorSet[1] = color('#f20f0f')
-  colorSet[2] = color('#36bf7f')
-  colorSet[3] = color('#491bf2')
-  colorSet[4] = color('#6d1bbf')
-
+  bkgdColor = color("#000000")
+  foreColor = color("#ffffff")
+  colorSet[0] = color("#ffffff")
+  colorSet[1] = color("#f20f0f")
+  colorSet[2] = color("#36bf7f")
+  colorSet[3] = color("#491bf2")
+  colorSet[4] = color("#6d1bbf")
   ;(wWindowMin = underWidth / 8), (wWindowMax = underWidth)
   wWindow = map(scaler, 0, 1, wWindowMin, wWindowMax)
 
