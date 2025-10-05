@@ -3,37 +3,37 @@ limeGreen: #7ecf1c;
 gray: #f5f5f5; */
 
 body {
-  background-color: #999999;
+  background-color: black;
   margin: 0;
-  padding:0;
+  padding: 0;
   display: flex;
   height: 100vh;
 
-  overflow:hidden;
+  overflow: hidden;
 }
 
 canvas {
   vertical-align: top;
   border-radius: 3px;
-} 
+}
 
 * {
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 @font-face {
-  font-family: "Geist";
-  src: url("resources/Geist-Medium.ttf");
+  font-family: 'Geist';
+  src: url('resources/Geist-Medium.ttf');
 }
 
 @font-face {
-  font-family: "GeistExtraBold";
-  src: url("resources/Geist-ExtraBold.ttf");
+  font-family: 'GeistExtraBold';
+  src: url('resources/Geist-ExtraBold.ttf');
 }
 
 @font-face {
-  font-family: "GeistLight";
-  src: url("resources/Geist-Light.ttf");
+  font-family: 'GeistLight';
+  src: url('resources/Geist-Light.ttf');
 }
 
 /* MAIN CONTAINER */
@@ -44,13 +44,13 @@ canvas {
   height: 100%;
 }
 
-#defaultCanvas0{
+#defaultCanvas0 {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
 }
 
 .left-column {
   width: 200px;
-  height:auto;
+  height: auto;
   background-color: #fff;
   padding: 10px;
   margin: 5px;
@@ -65,38 +65,38 @@ canvas {
 }
 
 .right-column {
-  flex:1;
+  flex: 1;
   width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
 
   margin: 5px;
-  margin-left:0px;
-  padding:0px;
+  margin-left: 0px;
+  padding: 0px;
 
   border-radius: 3px;
 }
 
 #previewScale {
-  font-family: "Geist", sans-serif;
-  font-size:12px;
+  font-family: 'Geist', sans-serif;
+  font-size: 12px;
   color: #fff;
 
-  display:block;
-  position:absolute;
-  bottom:5px;
-  right:5px;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
   background-color: #000;
 
-  height:auto;
+  height: auto;
 
-  padding:10px;
-  margin-left:5px;
+  padding: 10px;
+  margin-left: 5px;
   border-radius: 3px;
 }
 
-.centerButton{
+.centerButton {
   width: 100%;
   height: 100%;
 
@@ -107,12 +107,12 @@ canvas {
 }
 
 #canvas-container {
-  z-index:-100;
+  z-index: -100;
   width: 100%;
   height: 100%;
 
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 
   display: flex;
   flex-direction: row;
@@ -123,114 +123,113 @@ canvas {
 /* MODULES */
 
 .module {
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .moduleLabel {
-  font-family: "Geist", sans-serif;
-  margin-bottom:5px;
-  font-size:10pt;
+  font-family: 'Geist', sans-serif;
+  margin-bottom: 5px;
+  font-size: 10pt;
   color: #000;
 }
 
 .subModule {
-  padding-top:5px;
-  padding-bottom:5px;
-  display:flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
   flex-direction: column;
 }
 .subModuleRow {
-  padding-top:5px;
-  padding-bottom:5px;
-  display:flex;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
   flex-direction: row;
 }
 .subModuleRow .moduleLabel {
   /* margin-left:5px; */
-  margin-top:2px;
-  margin-right:5px;
+  margin-top: 2px;
+  margin-right: 5px;
 }
 .subModuleSubButton {
-  padding-top:5px;
-  display:flex;
+  padding-top: 5px;
+  display: flex;
 }
 .subModule2 {
-  padding-top:5px;
-  display:flex;
+  padding-top: 5px;
+  display: flex;
   flex-direction: column;
 }
 
 .subModule3 {
-  width:90px;
-  padding-top:5px;
-  display:flex;
+  width: 90px;
+  padding-top: 5px;
+  display: flex;
   flex-direction: row;
 }
 .subModule3 .moduleLabel {
-  margin-top:5px;
-  margin-left:3px;
+  margin-top: 5px;
+  margin-left: 3px;
 }
 
 .subModule3_pair {
   /* padding-top:5px; */
-  display:flex;
+  display: flex;
   flex-direction: row;
-  gap:5px;
+  gap: 5px;
 }
 .subModule4 {
-  width:90px;
-  padding-top:5px;
-  display:flex;
+  width: 90px;
+  padding-top: 5px;
+  display: flex;
   flex-direction: column;
 }
 .subModule5a {
-  width:80px;
+  width: 80px;
   /* margin-top:5px; */
-  display:flex;
+  display: flex;
   flex-direction: row;
 }
 
 .subModule5a label {
-  margin-top:2px;
-  margin-left:3px;
+  margin-top: 2px;
+  margin-left: 3px;
 }
 
 .subModuleRow label {
-  margin-top:1px;
-  margin-left:3px;
+  margin-top: 1px;
+  margin-left: 3px;
 
-  padding-right:12px;
-
+  padding-right: 12px;
 }
 
 .subModuleLabel_duo {
-  display:flex;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
 .subModuleLabel_duo input {
-  width:30px;
+  width: 30px;
 }
 
 .subModule5b {
   /* margin-top:5px; */
-  width:100px;
+  width: 100px;
 }
 /* .subModule4 .moduleLabel {
   font-size:8pt;
 } */
 
 .subModule3 label {
-  margin-top:2px;
-  margin-left:3px;
+  margin-top: 2px;
+  margin-left: 3px;
 }
 
 .subsubModuleAnimate {
-  display:flex;
+  display: flex;
   flex-direction: row;
 }
-.subsubModuleAnimate input[type="checkbox"] {
+.subsubModuleAnimate input[type='checkbox'] {
   appearance: none; /* Removes default styling */
   width: 15px;
   height: 15px;
@@ -241,28 +240,28 @@ canvas {
   position: relative;
   cursor: pointer;
 }
-.subsubModuleAnimate input[type="checkbox"]:checked {
+.subsubModuleAnimate input[type='checkbox']:checked {
   background-color: rgb(0, 200, 150); /* Fills in the circle when checked */
 }
 
 .subsubModuleAnimate_pair {
-  display:flex;
+  display: flex;
   flex-direction: row;
 }
-.subsubModuleAnimate_pair input[type="range"]{
-  width:78px;
+.subsubModuleAnimate_pair input[type='range'] {
+  width: 78px;
 }
 .subsubModuleAnimate_single {
-  display:flex;
-  width:100%;
+  display: flex;
+  width: 100%;
 }
 
 #customSizeInputs {
-  display:none;
+  display: none;
   flex-direction: row;
 
-  margin-top:5px;
-  margin-bottom:5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 #customSizeInputs .moduleLabel {
@@ -270,23 +269,23 @@ canvas {
   vertical-align: bottom;
 }
 .subModule5a .moduleLabel {
-  margin-top:5px;
-  margin-left:3px;
+  margin-top: 5px;
+  margin-left: 3px;
 }
 #blurMag {
-  display:none;
+  display: none;
 }
 /* UI */
 
-select{
-  font-family: "Geist", sans-serif;
+select {
+  font-family: 'Geist', sans-serif;
 
-  text-align:center;
-  width:100%;
-  height:30px;
+  text-align: center;
+  width: 100%;
+  height: 30px;
 
-  padding:0;
-  margin-left:0;
+  padding: 0;
+  margin-left: 0;
 
   border-radius: 3px;
   border-color: #000;
@@ -295,39 +294,39 @@ select{
 }
 
 .selectPair {
-  margin-top:5px;
-  display:flex;
+  margin-top: 5px;
+  display: flex;
   flex-direction: row;
-  gap:5px;
+  gap: 5px;
 }
 
 textarea {
-  text-align:center;
+  text-align: center;
 }
 
-input[type=number]{
-  font-family: "Geist", sans-serif;
+input[type='number'] {
+  font-family: 'Geist', sans-serif;
   width: 45px;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
   opacity: 1; /* Makes them always visible */
 }
 
-input[type=file]{
+input[type='file'] {
   width: 180px;
 }
 
-input[type=button]{
-  font-family: "Geist", sans-serif;
-  text-align:center;
-  width:100%;
-  height:30px;
-  padding:0;
-  margin-left:0;
+input[type='button'] {
+  font-family: 'Geist', sans-serif;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  padding: 0;
+  margin-left: 0;
   /* margin-top:5px; */
-  border-width:1px;
+  border-width: 1px;
   border-radius: 3px;
   border-color: #000;
   background-color: #fff;
@@ -336,70 +335,70 @@ input[type=button]{
   box-shadow: 2px 2px 0 0 #000;
 }
 
-input[type=range]{
-  margin-top:10px;
+input[type='range'] {
+  margin-top: 10px;
 }
 
-input[type=color]{
-  border:1px solid #8A9A88;
-  outline:0;
-  margin:0;
-  padding:0;
-  width:85px;
-  height:20px
+input[type='color'] {
+  border: 1px solid #8a9a88;
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  width: 85px;
+  height: 20px;
 }
-input[type=color]::-webkit-color-swatch-wrapper{
-  padding:0
+input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
 }
-input[type=color]::-webkit-color-swatch{
-  border:none
+input[type='color']::-webkit-color-swatch {
+  border: none;
 }
 
 .swatchGrid {
-  height:auto;
-  display:flex;
-  flex-direction:row;
+  height: auto;
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  gap:2px;
+  gap: 2px;
 }
-.swatchGrid div{
-  display:flex;
-  width:43px;
-  height:43px;
-  object-fit:fill;
+.swatchGrid div {
+  display: flex;
+  width: 43px;
+  height: 43px;
+  object-fit: fill;
 }
 
 input#pgGradAng {
-  margin-top:0;
-  padding-top:0;
-  border:0px;
-  box-shadow:none;
+  margin-top: 0;
+  padding-top: 0;
+  border: 0px;
+  box-shadow: none;
   cursor: pointer;
 }
 
 input#approxLoop {
-  margin-top:5px;
-  padding-top:0;
-  border:0px;
-  box-shadow:none;
+  margin-top: 5px;
+  padding-top: 0;
+  border: 0px;
+  box-shadow: none;
   cursor: pointer;
 }
 
 input#userReset {
   text-decoration: underline;
-  width:40px;
-  height:20px;
-  margin:0;
-  padding:0;
-  border:0px;
-  box-shadow:none;
+  width: 40px;
+  height: 20px;
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  box-shadow: none;
   cursor: pointer;
 }
 
-input[type=checkbox]{
+input[type='checkbox'] {
   accent-color: #a6b7b7;
-  margin-left:0;
-  margin-right:0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .checkbox-container {
@@ -418,7 +417,7 @@ input[type=checkbox]{
 .custom-checkbox {
   width: 18px;
   height: 18px;
-  border: 2px solid #8A9A88; /* Light gray border */
+  border: 2px solid #8a9a88; /* Light gray border */
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -428,26 +427,26 @@ input[type=checkbox]{
 
 /* Checkbox checked state */
 .checkbox-container input:checked + .custom-checkbox {
-  background: #A4D060; /* Green fill */
-  border-color: #A4D060;
+  background: #a4d060; /* Green fill */
+  border-color: #a4d060;
 }
 
 /* Checkmark (✓) */
 .checkbox-container input:checked + .custom-checkbox::after {
   /* content: "✔"; */
-  content: "x";
+  content: 'x';
   color: #102724; /* Dark green checkmark */
   font-size: 14px;
 }
 
 button {
-  text-align:center;
-  width:50%;
-  height:30px;
+  text-align: center;
+  width: 50%;
+  height: 30px;
 
-  padding:0;
+  padding: 0;
   /* margin-top:5px; */
-  margin-left:0;
+  margin-left: 0;
 
   border-radius: 53px;
 
@@ -463,68 +462,68 @@ button {
 /* TYPE */
 
 h1 {
-  font-family: "GeistLight", sans-serif;
-  font-size:30px;
-  text-align:left;
-  line-height:30px;
-  margin-bottom:0;
+  font-family: 'GeistLight', sans-serif;
+  font-size: 30px;
+  text-align: left;
+  line-height: 30px;
+  margin-bottom: 0;
   margin-top: 0;
   color: #000;
 }
 h2 {
-  font-family: "Geist", sans-serif;
+  font-family: 'Geist', sans-serif;
   text-align: left;
-  margin-top:5px;
-  margin-bottom:0;
-  font-size:8pt;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 8pt;
   color: #000;
 }
 h3 {
-  font-family: "GeistExtraBold", sans-serif;
+  font-family: 'GeistExtraBold', sans-serif;
   text-transform: uppercase;
   /* text-decoration: underline; */
-  margin:0;
-  padding:0;
-  font-size:12pt;
+  margin: 0;
+  padding: 0;
+  font-size: 12pt;
   color: #000;
 }
 
 h4 {
-  font-family: "Geist", sans-serif;
+  font-family: 'Geist', sans-serif;
   text-transform: uppercase;
   text-align: center;
-  margin:0;
-  padding:5px;
-  font-size:10pt;
+  margin: 0;
+  padding: 5px;
+  font-size: 10pt;
   color: #fff;
   background-color: red;
   border-radius: 10px;
 }
 
 p {
-  font-family: "Geist", sans-serif;
+  font-family: 'Geist', sans-serif;
   color: #a6b7b7;
 }
 
 .moduleImg {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 
-  margin-top:15px;
+  margin-top: 15px;
 }
 
 /* SWATCHES */
 
 label {
-  font-family: "Geist", sans-serif;
-  font-size:10pt;
+  font-family: 'Geist', sans-serif;
+  font-size: 10pt;
   color: #000;
 
   display: inline-block;
   cursor: pointer;
 
-  margin-bottom:-5px;
+  margin-bottom: -5px;
 }
 
 .ranger {
@@ -544,7 +543,7 @@ label {
   cursor: pointer;
 }
 input.fileInput {
-  width:180px;
+  width: 180px;
   /* margin-top: 5px; */
   box-shadow: 2px 2px 0 0 #000;
 }
@@ -552,15 +551,15 @@ input.fileInput {
   visibility: hidden;
 }
 .fileInput::before {
-  width:178px;
-  height:20px;
-  text-align:center;
+  width: 178px;
+  height: 20px;
+  text-align: center;
   content: 'Upload Image';
   display: inline-block;
   border: 1px solid #000;
   border-radius: 2px;
-  padding-top:5px;
-  margin:0;
+  padding-top: 5px;
+  margin: 0;
   outline: none;
   white-space: nowrap;
   -webkit-user-select: none;
@@ -571,24 +570,24 @@ input.fileInput {
 }
 
 input.jsonInput {
-  width:90px;
+  width: 90px;
   box-shadow: 2px 2px 0 0 #000;
 }
 .jsonInput::-webkit-file-upload-button {
   visibility: hidden;
 }
 .jsonInput::before {
-  width:90px;
-  height:20px;
-  text-align:center;
+  width: 90px;
+  height: 20px;
+  text-align: center;
   content: 'Load';
-  font-family: "Geist", sans-serif;
+  font-family: 'Geist', sans-serif;
   display: inline-block;
   border: 1px solid #000;
   border-radius: 2px;
-  padding-top:5px;
-  padding-bottom:3px;
-  margin:0;
+  padding-top: 5px;
+  padding-bottom: 3px;
+  margin: 0;
   outline: none;
   white-space: nowrap;
   -webkit-user-select: none;
@@ -599,60 +598,118 @@ input.jsonInput {
 }
 .uploadSpan {
   /* font-family:'IBM Plex Mono',monospace; */
-  font-family: "Geist", sans-serif;
-  font-size:12px;
-  text-align:center;
-  color:#000;
-  margin:0;
-  margin-top:5px;
+  font-family: 'Geist', sans-serif;
+  font-size: 12px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+  margin-top: 5px;
   /* margin-bottom:5px; */
   overflow: hidden;
   /* padding-bottom:10px; */
-  height:auto;
+  height: auto;
 }
 
-#loopSet { display:none;}
-#lineSet { display:none;}
-#sphereSet { display:none;}
-#stackSet { display:none;}
-
-#wireframe-container { display:none;}
-#upload-clip-container { display:none;}
-#color-container { display:none;}
-#gradient-container { display:none;}
-#pgImageSelect-container { display:none;}
-#upload-pictures-container { display:none;}
-
-#rotationSpeedSlider{ display:none;}
-#sequenceWindowSlider{ display:none;}
-
-#animateDeptherOn { display:none}
-#animateDeptherOff { display:none}
-#animateFrameCOn { display:none}
-#animateFrameCOff { display:none}
-#animateSizerrOn { display:none}
-#animateSizerOff { display:none}
-#animateRadiusOn { display:none}
-#animateRadiusCOff { display:none}
-
-#colorFore { display:flex }
-#imageFore { display:none }
-
-#gradAccelOptions { display:none; }
-
-#accelMod { display:none; }
-#recStatus { display:none; }
-#motionOptions { display:none; }
-#loopNowPossible { display:none; }
-
-#resDistSlider{ display: none;}
-#animateOption{ display: none;}
-
-#coreResRadiSettings{
+#loopSet {
   display: none;
-  margin-top:5px;
 }
-#indResRadiSettings{
+#lineSet {
+  display: none;
+}
+#sphereSet {
+  display: none;
+}
+#stackSet {
+  display: none;
+}
+
+#wireframe-container {
+  display: none;
+}
+#upload-clip-container {
+  display: none;
+}
+#color-container {
+  display: none;
+}
+#gradient-container {
+  display: none;
+}
+#pgImageSelect-container {
+  display: none;
+}
+#upload-pictures-container {
+  display: none;
+}
+
+#rotationSpeedSlider {
+  display: none;
+}
+#sequenceWindowSlider {
+  display: none;
+}
+
+#animateDeptherOn {
+  display: none;
+}
+#animateDeptherOff {
+  display: none;
+}
+#animateFrameCOn {
+  display: none;
+}
+#animateFrameCOff {
+  display: none;
+}
+#animateSizerrOn {
+  display: none;
+}
+#animateSizerOff {
+  display: none;
+}
+#animateRadiusOn {
+  display: none;
+}
+#animateRadiusCOff {
+  display: none;
+}
+
+#colorFore {
+  display: flex;
+}
+#imageFore {
+  display: none;
+}
+
+#gradAccelOptions {
+  display: none;
+}
+
+#accelMod {
+  display: none;
+}
+#recStatus {
+  display: none;
+}
+#motionOptions {
+  display: none;
+}
+#loopNowPossible {
+  display: none;
+}
+
+#resDistSlider {
+  display: none;
+}
+#animateOption {
+  display: none;
+}
+
+#coreResRadiSettings {
+  display: none;
+  margin-top: 5px;
+}
+#indResRadiSettings {
   display: block;
-  margin-top:5px;  
+  margin-top: 5px;
 }
