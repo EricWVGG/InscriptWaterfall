@@ -6,7 +6,7 @@ var saveFileType = 0;
 var sizeType = 0;
 var previewScaler = 1;
 
-var starterText = "INSCRIPT\nTYPE+TECH\nFESTIVAL";
+var starterText = "INSCRIPT\nTYPE&TECH\nFESTIVAL";
 
 var inputText = [];
 
